@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:postgresql://postgresql-dev.c4gebpgnh17l.us-east-1.rds.amazonaws.com:5432/uaa
+    username: uaa
+    password: uaa
+    hikari:
+      poolName: Hikari
+      auto-commit: false
+  liquibase:
+    change-log: "classpath:/db/master.xml"
